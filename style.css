@@ -1,0 +1,95 @@
+/*set viewing area and page font*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Itim', cursive;
+    color: rgb(215, 22, 22);
+}
+/* adjust background to fit and add NCSU img */
+.background {
+    background-color: #12181B;
+    height: 100vh;
+    padding-top: 1px;
+    background-image: url('NCSUwolf.png');
+    background-size: 200px;
+}
+/* style title */
+.title {
+    background-color: white;
+    border: rgb(215, 22, 22) solid 10px;
+    text-align: center;
+    padding: 5px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    font-size: 35px;
+    width: 400px;
+}
+/* style display  */
+.display{
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    border: rgb(215, 22, 22) solid 10px;
+    font-size: 40px;
+    width: 400px;
+    color: black;
+}
+/* hide ui elements  */
+.hide {
+    display: none;
+}
+/* style grid */
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+}
+/* style each tile and add cursor */
+.tile {
+    border: 5px solid rgb(215, 22, 22);
+    background-color: black;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    cursor: pointer;
+}
+/* player X style */
+.playerX {
+    color: red;
+}
+/* player O style */
+.playerO {
+    color: red;
+}
+/* adjust reset button placement  */
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+/* style reset button */
+#reset {
+    background-color: white;
+    color: black;
+    padding: 5px; 
+    border-radius: 50px;
+    border: rgb(215, 22, 22) solid 10px;
+    font-size: 40px;
+    cursor: pointer;
+    width: 200px;
+}
